@@ -5,7 +5,7 @@ struct ImagePage {
 
   build(){
     Column(){
-      Row(){
+      Row() {
         Image($r('app.media.icon'))
           .width(this.imageWidth)
           .interpolation(ImageInterpolation.High)
