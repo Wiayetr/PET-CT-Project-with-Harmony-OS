@@ -3,11 +3,16 @@ import router from '@ohos.router'
 export struct CommonHeader {
   build() {
     Row({space:5}) {
-      Text("返回")
-        .onClick(() => {
+      Image($r('app.media.back'))
+        .width(30)
+        .onClick(() =>(
           router.back()
-        })
+        ))
       Blank()
+      Image($r('app.media.refresh'))
+        .width(30)
     }
+    .width('98%')
+    .height(30)
   }
 }

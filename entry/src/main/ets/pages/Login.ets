@@ -63,7 +63,9 @@ struct Login {
         Text("忘记密码")
           .margin({top:20})
           .onClick(() => {
-
+            router.pushUrl({
+              url: 'pages/ForgetPassword'
+            })
           })
       }
 

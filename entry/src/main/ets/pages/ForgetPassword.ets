@@ -3,7 +3,7 @@ import {CommonHeader} from '../components/CommonHeader'
 
 @Entry
 @Component
-struct Register {
+struct ForgetPassword {
   @State password: string = ''
   @State account: string = ''
   @State password_input: string = ''
@@ -14,7 +14,7 @@ struct Register {
       CommonHeader()
         .margin(20)
 
-      TextInput({placeholder: "注册邮箱"})
+      TextInput({placeholder: "登录邮箱"})
         .margin({top:200,bottom:40})
         .width(300)
         .backgroundColor('#B0C4DE')
@@ -25,7 +25,7 @@ struct Register {
           this.account_input = value
         })
 
-      TextInput({placeholder: "注册密码"})
+      TextInput({placeholder: "新密码"})
         .width(300)
         .backgroundColor('#B0C4DE')
         .type(InputType.Password)
@@ -35,7 +35,7 @@ struct Register {
           this.password_input = value
         })
 
-      Button('注册并登录')
+      Button('修改密码并登录')
         .margin({top:50})
         .width(150)
 
