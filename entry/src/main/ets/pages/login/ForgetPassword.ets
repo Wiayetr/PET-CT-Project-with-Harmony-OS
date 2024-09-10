@@ -1,5 +1,5 @@
 import router from '@ohos.router';
-import {CommonHeader} from '../components/CommonHeader'
+import {CommonHeader} from '../../components/CommonHeader'
 
 @Entry
 @Component

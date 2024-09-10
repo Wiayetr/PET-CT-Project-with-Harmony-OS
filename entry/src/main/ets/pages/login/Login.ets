@@ -1,4 +1,6 @@
 import router from '@ohos.router';
+import UserModel from '../../model/UserModel'
+import UserTable from '../../database/UserInfoTable'
 
 @Entry
 @Component
@@ -8,6 +10,8 @@ struct Login {
 
   @State password_input: string = ''
   @State account_input: string = ''
+
+
 
   build() {
     Column() {
@@ -49,6 +53,9 @@ struct Login {
       Button("登录")
         .margin({top:50})
         .width(260)
+        .onClick(() => {
+
+        })
 
       //register or forget password
       Row() {
